@@ -3,14 +3,24 @@ declare(strict_types=1);
 
 namespace Nfq\Akademija\Strict{
 
-    function calculateHomeWorkSum(int ...$numbers): int{
-        $sum = 0;
+    function wrapper(){
 
-        foreach ($numbers as $n) {
-            $sum += $n;
+        function calculateHomeWorkSum(int ...$numbers): int{
+            echo "function reached";
+            $sum = 0;
+
+            foreach ($numbers as $n) {
+                echo $n;
+                $sum += $n;
+
+            }
+            echo __FUNCTION__  . ": ";
+            return $sum;
         }
-        echo __FUNCTION__ . ": ";
-        return $sum;
+
+        return calculateHomeWorkSum(3, 2.2, '1');
+
+
     }
 
 }

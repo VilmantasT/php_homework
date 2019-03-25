@@ -28,6 +28,7 @@ namespace Nfq\Akademija\Soft{
 
         foreach ($numbers as $n) {
             $sum += $n;
+
         }
         echo __FUNCTION__ . ": ";
         return $sum;
