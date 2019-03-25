@@ -1,0 +1,21 @@
+{
+  "name": "vilma/homework",
+  "authors": [
+    {
+      "name": "VilmantasT",
+      "email": ""
+    }
+  ],
+  "require": {
+    "monolog/monolog": "1.0.*"
+  },
+  "require-dev": {
+    "psr/http-message": "1.0.*"
+  },
+  "autoload": {
+    "files": [
+      "src/functions.php",
+      "src/functions_strict.php"
+    ]
+  }
+}
